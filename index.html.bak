@@ -46,7 +46,7 @@
             <p class="landing__p ">¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
             <form action="#" class="landing__form">
                 <input class="landing__input" placeholder="Email" type="email" name="email" >
-                <input class="landing__submit" type="submit" value="Comenzar >">
+                <input class="landing__submit" href="suscripcion.html" type="submit" value="Comenzar >">
             </form>
         </article>
         <article class="specs specs--first">
