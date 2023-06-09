@@ -7,9 +7,10 @@
     <title>Netflix</title>
     <link rel="icon" type="image/x-icon" href="assets\nficon2016.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/font/style.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/suscripcion.css">
     <script defer src="js/app.js"></script>
 </head>
 
@@ -17,59 +18,120 @@
     
     <header class="header">
         <h1 class="header__h1">
-            <a href="index.html" title="Netflix" class="header__a">
+            <a href="#" title="Netflix" class="header__a">
                 <svg class="header__img" viewBox="0 0 111 30" focusable="false"><g id="netflix-logo"><path d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z" id="Fill-14"></path></g></svg>
             </a>
         </h1>
-    </header>
-	
-	<main class="main">
-
-        <article class="landing">
-            <div class="landing__login">
-                <form class="login__form">
-                    <h2 class="title__login">Iniciar sesión</h2>
-                    <div class="input__login__container">
-                        <input class="input__login"  type="email" placeholder="Email o número de teléfono">
-                    </div>
-
-                    <div class="input__login__container">
-                        <input class="input__login"  type="password" placeholder="Contraseña">
-                    </div>
-
-                    <button href="index.html" class="button__login" type="submit">
-                        Iniciar sesión
-                    </button>
+        <nav class="header__nav">
+            <ul class="header__ul">
                 
-                    <div class="login__form__help">
-                        <div class="login__remember">
-                            <input type="checkbox" class="login__remember__check" name="remember" value="true" checked>
-                            <label for="remember" class="login__remember__label">Recuérdame</label> 
+					<select name="select_idioma">
+						<option value="value1">English</option>
+						<option value="value2" selected>Español</option>
+						<option value="value3">Portugués</option>
+					</select>
+                
+                <li class="header__li">
+                    <a href="login.html" title="iniciar sesión" class="header__login">
+                        Iniciar sesión
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-                        </div>
+    <body>
 
-                        <a class="login__help__zelda" href="index.html">¿Necesitas ayuda?</a>
-                    </div>  
-
-                    <!--por aca -->
-                    <div class="login__form__extra">
-                        <div class="login__register__now">
-                            <span class="login__register__now__text">¿Primera vez en Netflix? </span>
-                            <a class="login__register__now__zelda" href="index.html">Suscríbete ahora.</a>
-                        </div>
-                        <div class="login__form__captcha">
-                            <span class="login__form__captcha__text">Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.</span>
-                        </div>
-                    </div>  
-
-
-                </form>
+	<div id="contenedor2">
+            <div id="central2">
+                <div id="login">
+					<div class="subtitulo">
+                        Paso 2 de 3
+                    </div>
+                    <div class="titulo">
+                        Selecciona el plan ideal para ti
+                    </div>
+					<div class="subtitulo"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+					<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+					</svg>
+                        Ve todo lo que quieras. Sin anuncios.
+                    </div>
+					<div class="subtitulo"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+					<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+					</svg>
+                        Recomendaciones exclusivas para ti.
+                    </div>
+					<div class="subtitulo"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+					<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+					</svg>
+                        Puedes cambiar de plan o cancelar cuando quieras.
+                    </div>
+                    
+					<div class="container">
+					<div class = "table-responsive">
+					<table class="table">
+						  <thead>
+							<tr>
+							  <td scope="col"></th>
+							  <td scope="col"><img src="assets/basico.png"></th>
+							  <td scope="col"><img src="assets/estandar.png"></th>
+							  <td scope="col"><img src="assets/premium.png"></th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <td scope="row">Precio mensual (Sin impuestos incluidos)</th>
+							  <td>$ 999</td>
+							  <td>$ 1.699</td>
+							  <td>$ 2.399</td>
+							</tr>
+							<tr>
+							  <td scope="row">Calidad de video</th>
+							  <td>Buena</td>
+							  <td>Mejor</td>
+							  <td>Óptima</td>
+							</tr>
+							<tr>
+							  <td scope="row">Resolución</th>
+							  <td>720p</td>
+							  <td>1080p</td>
+							  <td>4K+HDR</td>
+							</tr>
+							<tr>
+							  <td scope="row">Ve Netflix en tu TV, computadora, celular y tablet</th>
+							  <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+								<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+								</svg></td>
+							  <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+								<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+								</svg></td>
+							  <td><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+								<path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+								</svg></td>
+							</tr>
+						  </tbody>
+					</table>
+					</div>
+					</div>
+					
+					
+                    <div class="pie-form">
+                        <a>La disponibilidad del contenido en HD (720p), Full HD (1080p), Ultra HD (4K) y HDR depende de tu servicio de internet y del dispositivo en uso. No todo el contenido está disponible en todas las resoluciones. Consulta nuestros Términos de uso para obtener más información.</a>
+						<a>Solo las personas que vivan contigo pueden usar tu cuenta. Puedes ver Netflix en 4 dispositivos al mismo tiempo con el plan Premium, en 2 con el plan Estándar y en 1 con el plan Básico.</a>
+					</div>
+                </div>
+				
+				<div class="inferior2">
+                    <a href="suscripcion3.html" title="Ingresar" class="header__login">
+                        Siguiente
+                    </a>
+                </div>
+				
+				
             </div>
-            
-            
-        </div>
-        </article>
-	</main>
+    </div>
+        
+
 
     <footer class="footer">
         <div class="footer__center">
@@ -110,7 +172,6 @@
             <div class="footer__fila brand">Netflix Argentina</div>
         </div>
     </footer>
-    
 
 </body>
 </html>

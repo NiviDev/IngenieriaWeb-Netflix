@@ -1,0 +1,51 @@
+body {
+  font-family: var(--tipo-principal);
+  font-size: 100%;
+  min-height: 100vh;
+  background-color: black;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.titulo {
+	font-size: 60px;
+	text-align: center;
+	color: white;
+}
+
+.boton{
+	font-size: 25px;
+	text-align: center;
+	color: grey;
+	border-color: grey;
+	border-width: 1px;
+	border-style: solid;
+	font-family: arial;
+	
+}
+
+#contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 0;
+    padding: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+	
+	font-family: arial;
+}
+
+#central {
+    max-width: 900px;
+    width: 100%;
+}
+
+.boton2{
+	background-color: transparent;
+	border: none;
+}
